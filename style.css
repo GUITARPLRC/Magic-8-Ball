@@ -1,0 +1,49 @@
+* {
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+body {
+	background-color:brown;
+}
+
+h1 {
+	margin-top:50px;
+	color:white;
+}
+
+#area {
+	height:600px;
+}
+
+#shape {
+	margin-top:20px;
+}
+
+#display {
+	width:30px;
+	font-size:12px;
+	text-align:center;
+	color:white;
+	margin:-140px auto 0 auto;
+}
+
+input {
+	width:500px;
+	margin-top:150px;
+	line-height:30px;
+}
+
+#shake {
+	padding:10px;
+	background-color:blue;
+	color:white;
+}
+
+#clear {
+	margin:50px 0 0 50px;
+	padding:10px;
+	background-color:green;
+	color:white;
+}
