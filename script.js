@@ -10,13 +10,16 @@ var answers = ["Signs Point To Yes", "My Sources Say No", "Ask Again Later", "No
  "As I See It, Yes", "Outlook Not So Good", "Very Doubtful", "It Is Certain", "Concentrate And Ask Again", "Better Not Tell You Now"];
 
 clear.addEventListener("click", function(){
-	question.textContent = "";
+	question.value = "";
 	pic.setAttribute("src", "magic.png");
+    pic.style.width = "200px";
 	display.textContent = "";
 });
 
 shake.addEventListener("click", function(){
-	
+
+    pic.style.width = "300px";
+    
 	randomNumber = Math.floor(Math.random() * 10);
 	
 	if (randomNumber === prevNumber) {
