@@ -14,7 +14,7 @@ h1 {
 }
 
 #area {
-	height:600px;
+	height:350px;
 }
 
 #shape {
@@ -22,16 +22,15 @@ h1 {
 }
 
 #display {
-	width:30px;
-	font-size:12px;
+	width:50px;
+	font-size:18px;
 	text-align:center;
 	color:white;
-	margin:-140px auto 0 auto;
+	margin:-210px auto 0 auto;
 }
 
 input {
 	width:500px;
-	margin-top:150px;
 	line-height:30px;
 }
 
