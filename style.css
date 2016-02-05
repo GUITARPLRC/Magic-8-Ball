@@ -21,6 +21,10 @@ h1 {
 	margin-top:20px;
 }
 
+.big {
+	width:300px;
+}
+
 #display {
 	width:50px;
 	font-size:18px;
