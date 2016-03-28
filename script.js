@@ -7,54 +7,50 @@ window.onload = function() {
 	var pic = document.getElementById("picture");
 	var randomNumber = 0;
 	var prevNumber = 0;
-	var a = 0;
 
 	var answers = ["Signs Point To Yes", "My Sources Say No", "Ask Again Later", "Not A Good Idea",
-	 "As I See It, Yes", "Outlook Not So Good", "Very Doubtful", "It Is Certain", "Concentrate And Ask Again", "Better Not Tell You Now"];
+	 "As I See It, Yes", "Outlook Not So Good", "Very Doubtful", "It Is Certain", "Concentrate And Ask Again",
+	 "Better Not Tell You Now"];
 
 	clear.addEventListener("click", function(){
 		
 		question.value = "";
-		
-		pic.setAttribute("src", "magic.png");
-		
-		pic.classList.remove("big");
-		
+		toggleImage();
 		display.textContent = "";
 		
 	});
 
 	shake.addEventListener("click", function(){
 		
-		if (a > 0) {
-			clear.click();
-			a = 0;
-			return;
-		}
 		
 		if (question.value.length === 0) {
+			
 			alert("Please enter a question");
 			clear.click();
 			return;
+			
 		}
 		
 		randomNumber = Math.floor(Math.random() * 10);
 		
 		if (randomNumber === prevNumber) {
+			
 			randomNumber = Math.floor(Math.random() * 10);
+			
 		}
 		
 		prevNumber = randomNumber;
-		
-		pic.classList.add("big");
-		
-		pic.setAttribute("src", "magic1.png");
-
+		toggleImage();	
 		display.textContent = answers[randomNumber];
-		
-		a++;
 		
 		
 	});
+	
+	function toggleImage() {
+		
+		pic.classList.toggle("big");
+		pic.classList.toggle("picture");
+		
+	}
 
 };
