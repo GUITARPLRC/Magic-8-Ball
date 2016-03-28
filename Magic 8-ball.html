@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/png" href="icon.png">
 	<title>Magic 8-ball</title>
 	<link rel="stylesheet" href="style.css"></link>
+	<script src="script.js"></script>
 
 </head>
 <body>
@@ -13,17 +14,18 @@
 	<div id="area">
 	
 		<div id="shape">
-			<img id="picture" src="magic.png"></img>
+			<img id="picture" class="picture" src="magic.png"></img>
 			<div id="display"></div>
 		</div>
 	
 	</div>
 
-	<input id="question" type="text" placeholder="Ask me a question"></input>
+	<input id="question" type="text" placeholder="Ask me a question" maxlength="25"></input>
 	<br />
-	<button id="shake">Get Answer</button>
-	<button id="clear">Ask Another!</button>
+	<div id="action">
+		<button id="shake" class="show">Get Answer</button>
+		<button id="clear" class="hide">Ask Another!</button>
+	</div>
 	
-	<script src="script.js"></script>
 </body>
 </html>

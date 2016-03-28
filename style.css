@@ -21,15 +21,13 @@ h1 {
 	margin-top:20px;
 }
 
-#picture {
-	background-image:url("magic.png") no-repeat;
-	transition: width 3s ease-in-out;
-	-webkit-transition: width 3s ease;
+.picture {
+	transition: width 10s ease-in-out;
+	-webkit-transition: width 10s ease;
 }
 
 .big {
 	width:300px;
-	background-image:url("magic1.png") no-repeat;
 }
 
 #display {
@@ -42,20 +40,43 @@ h1 {
 
 input {
 	width:500px;
-	line-height:30px;
+	height:50px;
+	line-height:40px;
+	font-size:36px;
+}
+
+#action {
+	position:relative;
+	margin:0 auto;
+	width:30%;
+	height:100px;
 }
 
 #shake {
-	padding:10px;
+	font-size:30px;
+	padding:15px 10px;
 	background-color:blue;
 	color:white;
+	z-index:0;
+	position:absolute;
+}
+
+.show {
+	visibility:show;
+	margin:20px 0 0 -90px;
+}
+.hide {
+	visibility:hidden;
+	margin:20px 0 0 -90px;
 }
 
 #clear {
-	margin:50px 0 0 50px;
-	padding:10px;
+	font-size:30px;
+	padding:15px 10px;
 	background-color:green;
 	color:white;
+	z-index:2;
+	position:absolute;
 }
 
 @-keyframes

@@ -14,14 +14,22 @@ window.onload = function() {
 
 	clear.addEventListener("click", function(){
 		
-		question.value = "";
+		toggleButtons();
+		
+		if (question.value !== ""){
+			
 		toggleImage();
+		
+		}
+		
+		question.value = "";		
 		display.textContent = "";
 		
 	});
 
-	shake.addEventListener("click", function(){
-		
+	shake.addEventListener("click", function(){		
+	
+		toggleButtons();
 		
 		if (question.value.length === 0) {
 			
@@ -38,11 +46,10 @@ window.onload = function() {
 			randomNumber = Math.floor(Math.random() * 10);
 			
 		}
-		
+	
 		prevNumber = randomNumber;
 		toggleImage();	
-		display.textContent = answers[randomNumber];
-		
+		display.textContent = answers[randomNumber];		
 		
 	});
 	
@@ -50,6 +57,15 @@ window.onload = function() {
 		
 		pic.classList.toggle("big");
 		pic.classList.toggle("picture");
+		
+	}
+	
+	function toggleButtons() {
+		
+		shake.classList.toggle("hide");
+		shake.classList.toggle("show");
+		clear.classList.toggle("hide");
+		clear.classList.toggle("show");
 		
 	}
 
