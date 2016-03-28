@@ -22,12 +22,15 @@ h1 {
 }
 
 .picture {
-	transition: width 10s ease-in-out;
-	-webkit-transition: width 10s ease;
+	-o-transition:width 3s linear;
+	-moz-transition:width 3s linear;
+	-webkit-transition: width 3s linear;
+	transition: width 3s linear;
 }
 
 .big {
-	width:300px;
+	content:url("magic1.png");
+	width:325px;
 }
 
 #display {
@@ -62,7 +65,7 @@ input {
 }
 
 .show {
-	visibility:show;
+	visibility:visible;
 	margin:20px 0 0 -90px;
 }
 .hide {
@@ -78,8 +81,3 @@ input {
 	z-index:2;
 	position:absolute;
 }
-
-@-keyframes
-@-keyframes
-@-keyframes
-@-keyframes
