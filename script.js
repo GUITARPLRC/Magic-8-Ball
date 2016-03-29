@@ -56,7 +56,7 @@ window.onload = function() {
 	function toggleImage() {
 		
 		pic.classList.toggle("big");
-		pic.classList.toggle("picture");
+		pic.classList.toggle("small");
 		
 	}
 	

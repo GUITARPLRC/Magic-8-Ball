@@ -22,15 +22,18 @@ h1 {
 }
 
 .picture {
-	-o-transition:width 3s linear;
-	-moz-transition:width 3s linear;
-	-webkit-transition: width 3s linear;
-	transition: width 3s linear;
+	width:10%;
+	-webkit-transition:width 2s;
+	transition:width 2s;
+	-webkit-transform:2s;
+	transform:2s;
 }
-
+.small {
+	content:url("magic.png");
+}
 .big {
 	content:url("magic1.png");
-	width:325px;
+	width:23%;
 }
 
 #display {
