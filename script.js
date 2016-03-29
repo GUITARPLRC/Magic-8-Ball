@@ -49,7 +49,11 @@ window.onload = function() {
 	
 		prevNumber = randomNumber;
 		toggleImage();	
-		display.textContent = answers[randomNumber];		
+		setTimeout(function(){
+			
+			display.textContent = answers[randomNumber];
+		
+		}, 3000);
 		
 	});
 	
