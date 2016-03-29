@@ -51,14 +51,16 @@ window.onload = function() {
 		toggleImage();	
 		setTimeout(function(){
 			
+			display.classList.toggle("fade");
 			display.textContent = answers[randomNumber];
 		
-		}, 3000);
+		}, 2300);
 		
 	});
 	
 	function toggleImage() {
-		
+			
+		pic.classList.toggle("shake");
 		pic.classList.toggle("big");
 		pic.classList.toggle("small");
 		
