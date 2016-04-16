@@ -77,6 +77,9 @@ input {
 	line-height:40px;
 	font-size:36px;
 }
+#warn {
+	visibility:hidden;
+}
 
 #action {
 	position:relative;
