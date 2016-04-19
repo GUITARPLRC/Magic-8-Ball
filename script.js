@@ -12,6 +12,9 @@ window.onload = function() {
 	 "As I See It, Yes", "Outlook Not So Good", "Very Doubtful", "It Is Certain", "Concentrate And Ask Again",
 	 "Better Not Tell You Now"];
 	var length = answers.length;
+	var timer;
+	
+	question.focus();
 
 	clear.addEventListener("click", function(){
 		
@@ -23,9 +26,11 @@ window.onload = function() {
 		
 		}
 		
-		question.value = "";		
+		question.value = "";
+		question.focus();
 		display.textContent = "";
 		display.style.visibility = "hidden";
+		clearTimeout(timer);
 		
 	});
 
@@ -52,7 +57,7 @@ window.onload = function() {
 		
 			prevNumber = randomNumber;
 			toggleImage();	
-			setTimeout(function(){
+			timer = setTimeout(function(){
 				
 				display.style.visibility = "visible";
 				display.classList.toggle("fade");

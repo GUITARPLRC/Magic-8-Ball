@@ -34,7 +34,7 @@ h1 {
 }
 .big {
 	content:url("magic1.png");
-	width:23%;
+	width:25%;
 }
 .shake {
 	-webkit-animation:shake 1s;
@@ -67,7 +67,7 @@ h1 {
 	font-size:18px;
 	text-align:center;
 	color:white;
-	margin:-210px auto 0 auto;
+	margin:-220px auto 0 auto;
 	z-index:5;
 }
 
