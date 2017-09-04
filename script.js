@@ -82,10 +82,17 @@ window.onload = function() {
 
 	function toggleImage() {
 		pic.classList.toggle('shake');
-		setTimeout(function() {
-			pic.classList.toggle('big');
-		}, 200);
-		pic.classList.toggle('small');
+		if (pic.getAttribute('src') == 'magic.png') {
+			setTimeout(function() {
+				pic.setAttribute('src', 'magic1.png');
+				pic.style.width = '400px';
+			}, 500);
+		} else {
+			setTimeout(function() {
+				pic.setAttribute('src', 'magic.png');
+				pic.style.width = '200px';
+			}, 500);
+		}
 	}
 
 	function toggleButtons() {
